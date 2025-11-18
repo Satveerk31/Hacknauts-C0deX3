@@ -1,7 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture(0)  # 0 = default webcam
-
+cap = cv2.VideoCapture(0) 
 if not cap.isOpened():
     print("Cannot open camera")
     exit()
@@ -17,3 +16,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
