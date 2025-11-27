@@ -6,16 +6,14 @@
   <title>Women Safety Analytics — Dashboard</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <!-- Libraries -->
+  
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-
-  <!-- SIDE NAV -->
+  
   <nav class="side-nav">
     <h2>WS Dashboard</h2>
     <ul>
@@ -25,7 +23,6 @@
     </ul>
   </nav>
 
-  <!-- HEADER -->
   <header>
     <div class="brand">
       <div class="logo">WS</div>
@@ -51,13 +48,10 @@
     </div>
   </header>
 
-  <!-- MAIN GRID -->
   <main class="layout">
 
-    <!-- LEFT SIDE -->
     <section class="left-col">
 
-      <!-- VIDEO -->
       <div class="video-area card">
         <video id="cctv" autoplay muted loop playsinline>
           <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
@@ -68,7 +62,6 @@
         </div>
       </div>
 
-      <!-- SYSTEM STATUS -->
       <aside class="controls card status-card">
         <h3>System Status</h3>
         <div class="status">
@@ -85,8 +78,7 @@
           <button class="btn ghost ripple" id="clearAlerts">Clear</button>
         </div>
       </aside>
-
-      <!-- ANALYTICS -->
+      
       <div class="card analytics-card">
         <h3>Analytics & Detections</h3>
         <canvas id="doughnut" height="120"></canvas>
@@ -106,17 +98,14 @@
 
     </section>
 
-    <!-- RIGHT SIDE -->
     <aside class="right-col">
-
-      <!-- HOTSPOT MAP -->
+      
       <div class="card map-card">
         <h3>Hotspot Map</h3>
         <div id="map" class="mapbox"></div>
         <div id="alertsList" class="alerts"></div>
       </div>
 
-      <!-- ACTION PANEL -->
       <div class="card action-card">
         <h3>Action Panel</h3>
         <div class="btn-group">
@@ -126,7 +115,6 @@
         </div>
       </div>
 
-      <!-- PEOPLE ANALYTICS -->
       <div class="card people-card">
         <h3>People Analytics</h3>
         <ul>
@@ -148,3 +136,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
